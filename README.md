@@ -60,7 +60,6 @@ accuracy
 
 ## Output:
 
-![Screenshot 2024-11-07 111746](https://github.com/user-attachments/assets/8858dc8b-97b5-4fe9-8948-fcb2abe3d0ec)
 ## data.head()
 ![Screenshot 2024-11-07 111758](https://github.com/user-attachments/assets/13c83d03-23ae-49c3-8fb9-66d4bc489517)
 ## data.tail()
