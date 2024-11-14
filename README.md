@@ -60,6 +60,19 @@ accuracy
 
 ## Output:
 
+![Screenshot 2024-11-07 111746](https://github.com/user-attachments/assets/8858dc8b-97b5-4fe9-8948-fcb2abe3d0ec)
+## data.head()
+![Screenshot 2024-11-07 111758](https://github.com/user-attachments/assets/13c83d03-23ae-49c3-8fb9-66d4bc489517)
+## data.tail()
+![Screenshot 2024-11-07 111804](https://github.com/user-attachments/assets/bd79481d-2237-4cf7-a95c-d2ae7b3e8326)
+## data.info()
+![Screenshot 2024-11-07 111814](https://github.com/user-attachments/assets/918e245a-ea81-48d6-89a7-0c96caad115f)
+## data.isnull().sum()
+![Screenshot 2024-11-07 111827](https://github.com/user-attachments/assets/81705a0a-44eb-41c7-afc8-645f261162fd)
+## Prediction y
+![Screenshot 2024-11-07 111836](https://github.com/user-attachments/assets/1020bccb-3622-4382-9752-577610b4e0a0)
+## Accuracy
+![Screenshot 2024-11-07 111842](https://github.com/user-attachments/assets/d9a48267-587e-4444-a04d-734c40dbcafb)
 
 ## Result:
 Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming.
