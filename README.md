@@ -8,15 +8,14 @@ To write a program to implement the SVM For Spam Mail Detection.
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Start the Program.
-2. Import the necessary packages.
-3. Read the given csv file and display the few contents of the data.
-4. Assign the features for x and y respectively.
-5. Split the x and y sets into train and test sets.
-6. Convert the Alphabetical data to numeric using CountVectorizer.
-7. Predict the number of spam in the data using SVC (C-Support Vector Classification) method of SVM (Support vector machine) in sklearn library.
-8. Find the accuracy of the model.
-9. End the Program.
+
+1. **Start the Program and Import Packages**: Import necessary libraries (like `pandas`, `sklearn`, etc.).
+2. **Read and Display Data**: Load the CSV file and display a preview of the data.
+3. **Assign Features (x) and Labels (y)**: Separate the dataset into features (`x`) and labels (`y`).
+4. **Split Data into Train and Test Sets**: Use `train_test_split` to divide the data.
+5. **Convert Alphabetical Data to Numeric**: Apply `CountVectorizer` to convert text features into numerical values.
+6. **Train Model with SVC**: Use Support Vector Classification (`SVC`) to train the model on the training data.
+7. **Evaluate Accuracy**: Calculate and display the accuracy of the model on the test data. 
 
 ## Program:
 ```
@@ -53,7 +52,6 @@ y_pred
 from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 accuracy
-
 ```
 
 ## Output:
