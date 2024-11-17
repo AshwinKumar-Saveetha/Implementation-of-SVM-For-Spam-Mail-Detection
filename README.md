@@ -26,52 +26,51 @@ Developed by: Ashwin Kumar A
 RegisterNumber: 212223040021 
 */
 
+import chardet
+file='spam.csv'
+with open(file,'rb') as rawdata:
+    result = chardet.detect(rawdata.read(100000))
+result
+
 import pandas as pd
-
-data=pd.read_csv("spam.csv",encoding="Windows-1252")
-
+data=pd.read_csv("spam.csv",encoding='Windows=1252')
 data.head()
-
 data.info()
-
 data.isnull().sum()
-
-x=data["v1"].values
-y=data["v2"].values
-
+x=data["v2"].values
+y=data["v1"].values
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
-
 from sklearn.feature_extraction.text import CountVectorizer
 cv=CountVectorizer()
 x_train=cv.fit_transform(x_train)
 x_test=cv.transform(x_test)
-
 from sklearn.svm import SVC
 svc=SVC()
 svc.fit(x_train,y_train)
 y_pred=svc.predict(x_test)
 y_pred
-
 from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 accuracy
+
 ```
 
 ## Output:
 
+![image](https://github.com/user-attachments/assets/a32d3c08-e5ca-405f-8b5b-4db7357db890)
+
 ## data.head()
-![Screenshot 2024-11-07 111758](https://github.com/user-attachments/assets/13c83d03-23ae-49c3-8fb9-66d4bc489517)
-## data.tail()
-![Screenshot 2024-11-07 111804](https://github.com/user-attachments/assets/bd79481d-2237-4cf7-a95c-d2ae7b3e8326)
+![image](https://github.com/user-attachments/assets/d8e89f33-3f4c-48b9-a94a-577ad07c7db2)
+
 ## data.info()
-![Screenshot 2024-11-07 111814](https://github.com/user-attachments/assets/918e245a-ea81-48d6-89a7-0c96caad115f)
+![image](https://github.com/user-attachments/assets/4c1f48a1-ead2-42a1-a070-a82791ffcc2f)
 ## data.isnull().sum()
-![Screenshot 2024-11-07 111827](https://github.com/user-attachments/assets/81705a0a-44eb-41c7-afc8-645f261162fd)
+![image](https://github.com/user-attachments/assets/58f0eeb5-4148-4773-994e-40c3081962b7)
 ## Prediction y
-![Screenshot 2024-11-07 111836](https://github.com/user-attachments/assets/1020bccb-3622-4382-9752-577610b4e0a0)
+![image](https://github.com/user-attachments/assets/06358c50-be41-4aeb-b862-c11945f925ab)
 ## Accuracy
-![Screenshot 2024-11-07 111842](https://github.com/user-attachments/assets/d9a48267-587e-4444-a04d-734c40dbcafb)
+![image](https://github.com/user-attachments/assets/b4224b6d-4cfc-4923-98f6-9a2a70e8d4f9)
 
 ## Result:
 Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming.
